@@ -5,17 +5,58 @@
 </head>
 
 <style>
+  body {
+    background-image: url('https://www.pixel4k.com/wp-content/uploads/2019/03/joker-new-art-4k_1553072149.jpg');
+    background-size: cover;
+  }
+  h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    color: #FCF3CF;
+  }
+  h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #FDEBD0;
+  }
+  .div {
+    background-image: url('https://phonebookofgrenoble.com/image/312126-full_harley-quin-wallpaper-group-66-download-for-free.jpg');
+    margin-top: 180px;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    padding-bottom: 180px;
+    border: 2px solid red;
+  }
 
+  button {
+    background-color: #9D9D9D;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
 
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
 </style>
 
 <body>
   <center>
+    <div class="div">
       <h1>Mqtt Web App</h1>
-
       <h2 id="status">The device is </h2>
       <button onclick="on()">On</button>
-      <button onclick="off()">Off</button>    
+      <button onclick="off()">Off</button>
+    </div>
   </center>
 </body>
 <script src="./script/browser-mqtt.js"></script>
